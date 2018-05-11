@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+    
+    <title>practical hub</title>
+
+   
+  </head>
+
+
+  <body>
+    
+  
+  <% if user_signed_in? %>
+  <section class="main">  
+   <div class="cover">
+    <%= form_tag search_path, method: :get, class: "flex-form" do %>
+    <%= text_field_tag :title, nil, placeholder: 'Search experiment' %>
+    <%= submit_tag 'submit' %>
+    <% end %>
+  </div> 
+
+   <div class="drop">
+       <h1> select labs </h1>
+       <div class="dropdown">
+        <button class="dropbtn">Select your lab</button>
+        <% Lab.all.each do |lab| %>
+            <div class="dropdown-content">
+             <a href="" class="<%= 'active' if params[:lab] == lab.title %>"><%= options_for_select(link_to lab.title, experiments_path(lab: lab.title)) %></a>
+         <% end %>    
+           </div>
+       </div>
+     </div>
+   </section>
+     <% else %>
+
+
+
+
+
+
+
+    <div class="site-content">
+      <main class="main-content">
+        <div class="hero">
+          <div class="container">
+            <img src="assets/imac.png" alt="" class="imac">
+            <div class="hero-content">
+              <span>To continue</span> <br>
+              <span>please login or create a new account </span>
+            </div>
+               
+               <a><%= link_to "Log In", new_user_session_path, class: "button" %></a>
+            
+            
+               <a><%= link_to "Register", new_user_registration_path, class: "button" %></a>
+
+          </div>
+        </div> <!-- .hero -->
+
+        <div class="fullwidth-block">
+          <div class="container">
+            <div class="col-md-4">
+              <div class="feature">
+                <i class="feature-icon"><img src="assets/support.png" alt=""></i>
+                <h2 class="feature-title">Support</h2>
+                <p>Vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="feature">
+                <i class="feature-icon"><img src="assets/experiment.png" alt=""></i>
+                <h2 class="feature-title">Practical hub</h2>
+                <p>Are you forgetting your expeiments ? want to have a look at kits and apparatus ? fed up with confusing outputs & experiments ? Dont worry, we help you to have a look at basic knowledge about theory , procedure and apparatus of the expeiment in a practical manner. Each video will help you to have ease and comfort while performing it </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="feature">
+                <i class="feature-icon"><img src="assets/about-us.png" alt=""></i>
+                <h2 class="feature-title">About US</h2>
+                <p>Praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident similique.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main> <!-- .main-content -->
+     </div>
+
+
+     
+
+
+
+
+
+    
+      <!-- Main -->
+        <div id="main">
+          <div class="inner">
+
+          <!-- Boxes -->
+            <div class="thumbnails">
+
+              <div class="box">
+                <a href="https://www.youtube.com/embed/-mMgMGVzrhQ" class="image fit"><img src="assets/pic01.jpg" alt="" /></a>
+                <div class="inner">
+                  <h3>Electronics and communication engineering</h3>
+                  <p></p>
+                  <a href="https://www.youtube.com/embed/-mMgMGVzrhQ" class="button fit" data-poptrox="youtube,800x400">Watch</a>
+                </div>
+              </div>
+
+              <div class="box">
+                <a href="https://www.youtube.com/embed/-mMgMGVzrhQ" class="image fit"><img src="assets/pic02.jpg" alt="" /></a>
+                <div class="inner">
+                  <h3>Computer science and engineering</h3>
+                  <p></p>
+                  <a href="https://www.youtube.com/embed/-mMgMGVzrhQ" class="button style2 fit" data-poptrox="youtube,800x400">Watch</a>
+                </div>
+              </div>
+
+              <div class="box">
+                <a href="https://www.youtube.com/embed/-mMgMGVzrhQ" class="image fit"><img src="assets/pic03.jpg" alt="" /></a>
+                <div class="inner">
+                  <h3>Electrical and electronics engineering</h3>
+                  <p></p>
+                  <a href="https://www.youtube.com/embed/-mMgMGVzrhQ" class="button style3 fit" data-poptrox="youtube,800x400">Watch</a>
+                </div>
+              </div>
+
+              <div class="box">
+                <a href="https://www.youtube.com/embed/-mMgMGVzrhQ" class="image fit"><img src="assets/pic04.jpg" alt="" /></a>
+                <div class="inner">
+                  <h3>Information technology</h3>
+                  <p></p>
+                  <a href="https://www.youtube.com/embed/-mMgMGVzrhQ" class="button style2 fit" data-poptrox="youtube,800x400">Watch</a>
+                </div>
+              </div>
+
+              <div class="box">
+                <a href="https://www.youtube.com/embed/-mMgMGVzrhQ" class="image fit"><img src="assets/pic05.jpg" alt="" /></a>
+                <div class="inner">
+                  <h3>Mechanical</h3>
+                  <p></p>
+                  <a href="https://www.youtube.com/embed/-mMgMGVzrhQ" class="button style3 fit" data-poptrox="youtube,800x400">Watch</a>
+                </div>
+              </div>
+
+              <div class="box">
+                <a href="https://youtu.be/s6zR2T9vn2c" class="image fit"><img src="assets/pic06.jpg" alt="" /></a>
+                <div class="inner">
+                  <h3>Civil</h3>
+                  <p></p>
+                  <a href="https://youtu.be/s6zR2T9vn2c" class="button fit" data-poptrox="youtube,800x400">Watch</a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+
+<% end %>
+
+
+
+     
+       <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     <!-- .main-content -->
+  </body>
+
+</html>

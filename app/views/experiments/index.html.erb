@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="UTF-8">
+     <meta name="description" content="about me">
+     <meta name="keywords" content="HTML,CSS,Rails,Arduino projects">
+     <meta name="author" content="sanjay pinnaka">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Practical hub</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'style', media: 'all', 'data-turbolinks-track': 'reload' %>
+</head>
+<body>
+
+    <h1 class="current-lab"><%= params[:lab] %></h1>
+    <% if @experiments.count == 0 %>
+	<h1>There are no experiments currently in this Lab</h1>
+    <% else %>
+    <% @experiments.where(:published => true).each do |experiment| %>
+   <h3><%= link_to experiment.title, experiment_path(experiment) %></h3>
+   <% end %>
+   <% end %>
+
+</body>
+</html>

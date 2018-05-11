@@ -1,0 +1,714 @@
+/* line 2, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+#logo {
+  margin: 20px;
+  float: left;
+  width: 270px;
+  height: 40px;
+  background: url("/3.png") no-repeat center;
+  display: block;
+}
+
+/* line 10, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 13, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+nav {
+  padding: 30px;
+}
+
+/* line 18, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+nav ul {
+  float: right;
+}
+
+/* line 21, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+nav ul li {
+  display: inline-block;
+  float: left;
+}
+
+/* line 25, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+nav ul li:not(:first-child) {
+  margin-left: 25px;
+}
+
+/* line 28, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+nav ul li a {
+  display: inline-block;
+  outline: none;
+  color: #1f2227;
+  font-size: 16px;
+  text-decoration: none;
+  letter-spacing: 0.04em;
+}
+
+/* line 36, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+nav ul li a:hover {
+  color: #808080;
+  text-decoration: none;
+}
+
+/* line 42, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+.current-lab {
+  margin-top: 150px;
+}
+
+/* line 46, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+.site-footer {
+  margin-top: 50px;
+}
+
+/* line 49, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+.dropdown-content {
+  min-width: 170px !important;
+}
+
+/*MAIN*/
+/* line 53, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+.notice {
+  margin-bottom: 0px !important;
+  text-align: center;
+}
+
+/* line 57, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+body {
+  font-size: 1.05em;
+  line-height: 1.25em;
+  font-family: Helvetica Neue, Helvetica, Arial;
+  background: #ffffff;
+  color: #555;
+}
+
+/* line 64, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+a {
+  color: #ed5151;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* line 69, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+a:hover {
+  color: #444;
+}
+
+/* line 72, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+header {
+  background: #fff;
+  width: 100%;
+  height: 76px;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+/* line 82, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+ul {
+  list-style: none;
+}
+
+/* line 85, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+li {
+  display: inline-block;
+  float: left;
+  padding: 10px;
+}
+
+/* line 90, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+.current {
+  color: #2262AD;
+}
+
+/* line 93, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+section {
+  margin: 80px auto 40px;
+  max-width: 980px;
+  position: relative;
+  padding: 20px;
+}
+
+/* line 99, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+h1 {
+  font-size: 2em;
+  color: #2262AD;
+  line-height: 1.15em;
+  margin: 20px 0;
+}
+
+/* line 105, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+p {
+  line-height: 1.45em;
+  margin-bottom: 20px;
+}
+
+/* line 110, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+#logo {
+  margin: 20px;
+  float: left;
+  width: 270px;
+  height: 40px;
+  background: url("/3.png") no-repeat center;
+  display: block;
+}
+
+/* line 128, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+.drop {
+  padding-bottom: 500px;
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+}
+
+/* line 136, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* line 145, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* line 150, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* line 159, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* line 166, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* line 168, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* line 172, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+/* line 178, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+input #title {
+  text-transform: lowercase;
+}
+
+/* line 181, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+.main1 {
+  display: table;
+  background-image: url("assets/k.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 50vh;
+}
+
+/* line 190, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+.cover {
+  height: 50vh;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.05)), to(rgba(0, 0, 0, 0)));
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0) 100%);
+  padding: 20px 0px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+/* line 208, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+.flex-form input[type="submit"] {
+  background: #ef3f5a;
+  border: 1px solid #ef3f5a;
+  color: #fff;
+  padding: 0 20px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+/* line 219, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+.flex-form input[type="submit"]:hover {
+  background: #d73851;
+  border: 1px solid #d73851;
+}
+
+/* line 224, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+.flex-form {
+  display: -webkit-box;
+  display: flex;
+  z-index: 10;
+  position: relative;
+  width: 314px;
+  box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* line 233, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+.flex-form > * {
+  border: 0;
+  padding: 0 0 0 5px;
+  background: #fff;
+  line-height: 50px;
+  font-size: 0.9rem;
+  border-radius: 0;
+  width: 214px;
+  outline: 0;
+  -webkit-appearance: none;
+}
+
+/* line 245, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+input[type="search"] {
+  flex-basis: 500px;
+}
+
+/* line 249, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+#madeby {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 25px 100px;
+  color: #fff;
+}
+
+/* line 265, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+#logo {
+  margin: 20px;
+  float: left;
+  width: 270px;
+  height: 40px;
+  background: url("/3.png") no-repeat center;
+  display: block;
+}
+
+/* line 276, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 279, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+nav {
+  padding: 30px;
+}
+
+/* line 283, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+nav ul {
+  float: right;
+}
+
+/* line 286, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+nav ul li {
+  display: inline-block;
+  float: left;
+}
+
+/* line 290, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+nav ul li:not(:first-child) {
+  margin-left: 25px;
+}
+
+/* line 293, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+nav ul li a {
+  display: inline-block;
+  outline: none;
+  color: #1f2227;
+  font-size: 16px;
+  text-decoration: none;
+  letter-spacing: 0.04em;
+}
+
+/* line 301, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+nav ul li a:hover {
+  color: #808080;
+  text-decoration: none;
+}
+
+/* line 308, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+#logo {
+  margin: 20px;
+  float: left;
+  width: 270px;
+  height: 40px;
+  background: url("assets/3.png") no-repeat center;
+  display: block;
+}
+
+@media screen and (max-width: 560px) {
+  /* line 320, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+  #logo {
+    width: 215px;
+    margin-left: 0px;
+  }
+
+  /* line 324, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+  .nav-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: #1f2227;
+    opacity: 0;
+    transition: all 0.2s ease;
+  }
+
+  /* line 335, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+  .nav-container ul {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+  }
+
+  /* line 341, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+  .nav-container ul li {
+    display: block;
+    float: none;
+    width: 100%;
+    text-align: right;
+    margin-bottom: 10px;
+  }
+
+  /* line 348, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+  .nav-container ul li:nth-child(1) a {
+    transition-delay: 0.2s;
+  }
+
+  /* line 351, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+  .nav-container ul li:nth-child(2) a {
+    transition-delay: 0.3s;
+  }
+
+  /* line 354, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+  .nav-container ul li:nth-child(3) a {
+    transition-delay: 0.4s;
+  }
+
+  /* line 357, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+  .nav-container ul li:nth-child(4) a {
+    transition-delay: 0.5s;
+  }
+
+  /* line 360, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+  .nav-container ul li:not(:first-child) {
+    margin-left: 0;
+  }
+
+  /* line 363, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+  .nav-container ul li a {
+    padding: 10px 25px;
+    opacity: 0;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    transform: translateY(-20px);
+    transition: all 0.2s ease;
+  }
+
+  /* line 372, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+  .nav-open {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: block;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    z-index: 9999;
+    border-radius: 50%;
+  }
+
+  /* line 383, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+  .nav-open i {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #1f2227;
+    border-radius: 2px;
+    margin-left: 14px;
+  }
+
+  /* line 391, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+  .nav-open i:nth-child(1) {
+    margin-top: 16px;
+  }
+
+  /* line 394, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+  .nav-open i:nth-child(2) {
+    margin-top: 4px;
+    opacity: 1;
+  }
+
+  /* line 398, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+  .nav-open i:nth-child(3) {
+    margin-top: 4px;
+  }
+}
+/* line 402, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+#nav:checked + .nav-open {
+  transform: rotate(45deg);
+}
+
+/* line 405, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+#nav:checked + .nav-open i {
+  background: #fff;
+  transition: transform 0.2s ease;
+}
+
+/* line 409, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+#nav:checked + .nav-open i:nth-child(1) {
+  transform: translateY(6px) rotate(180deg);
+}
+
+/* line 412, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+#nav:checked + .nav-open i:nth-child(2) {
+  opacity: 0;
+}
+
+/* line 415, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+#nav:checked + .nav-open i:nth-child(3) {
+  transform: translateY(-6px) rotate(90deg);
+}
+
+/* line 418, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+#nav:checked ~ .nav-container {
+  z-index: 9990;
+  opacity: 1;
+}
+
+/* line 422, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+#nav:checked ~ .nav-container ul li a {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* line 426, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+.hidden {
+  display: none;
+}
+
+/* line 431, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+.container {
+  margin-top: 85px;
+}
+
+/* line 435, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+.current-lab {
+  margin-top: 150px;
+}
+
+/* line 439, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+.site-footer {
+  margin-top: 50px;
+}
+
+/* line 442, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+.dropdown-content {
+  min-width: 170px !important;
+}
+
+/* line 446, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+.notice {
+  margin-bottom: 0px !important;
+  text-align: center;
+  width: 270px;
+}
+
+@media only screen and (max-width: 640px) {
+  /* line 469, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+  header {
+    position: absolute;
+  }
+
+  /* line 472, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+  #logo {
+    width: 215px;
+  }
+
+  /* line 475, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+  #menu-icon {
+    display: inline-block;
+  }
+
+  /* line 478, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+  nav ul, nav:active ul {
+    display: none;
+    position: absolute;
+    padding: 20px;
+    background: #fff;
+    border: 5px solid #444;
+    right: 20px;
+    top: 60px;
+    width: 50%;
+    border-radius: 4px 0 4px 4px;
+  }
+
+  /* line 489, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+  nav li {
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    margin: 0;
+  }
+
+  /* line 495, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+  nav:hover ul {
+    display: block;
+  }
+
+  /* line 498, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+  .container {
+    margin-top: 85px;
+  }
+
+  /* line 502, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+  .current-lab {
+    margin-top: 150px;
+  }
+
+  /* line 506, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+  .site-footer {
+    margin-top: 50px;
+  }
+
+  /* line 509, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+  .dropdown-content {
+    min-width: 170px !important;
+  }
+
+  /* line 513, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+  .notice {
+    margin-bottom: 0px !important;
+    text-align: center;
+  }
+}
+@media all and (max-width: 800px) {
+  /* line 522, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+  body {
+    font-size: 0.9rem;
+  }
+
+  /* line 526, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+  .flex-form {
+    width: 100%;
+  }
+
+  /* line 530, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+  input[type="search"] {
+    flex-basis: 100%;
+  }
+
+  /* line 534, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+  .flex-form > * {
+    font-size: 0.9rem;
+  }
+
+  /* line 538, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    padding: 10px !important;
+  }
+
+  /* line 545, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+  header h2 {
+    margin-bottom: 15px;
+  }
+
+  /* line 549, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+  h1 {
+    font-size: 2rem;
+  }
+
+  /* line 553, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+  .cover {
+    padding: 20px;
+    height: 110px;
+  }
+
+  /* line 558, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+  #madeby {
+    padding: 30px 20px;
+  }
+}
+@media all and (max-width: 360px) {
+  /* line 565, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+  header nav li {
+    margin: 0px 0px 0px 2px;
+  }
+
+  /* line 569, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+  .flex-form {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+  }
+
+  /* line 577, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+  input[type="search"] {
+    flex-basis: 0;
+  }
+
+  /* line 581, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+  label {
+    display: none;
+  }
+}
+/* line 587, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+.container {
+  margin-top: 85px;
+}
+
+/* line 591, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+.current-lab {
+  margin-top: 150px;
+}
+
+/* line 595, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+.site-footer {
+  margin-top: 50px;
+}
+
+/* line 598, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+.dropdown-content {
+  min-width: 170px !important;
+}
+
+/* line 602, C:/Sites/experiments/app/assets/stylesheets/style.scss */
+.notice {
+  margin-bottom: 0px !important;
+  text-align: center;
+  width: 270px;
+}

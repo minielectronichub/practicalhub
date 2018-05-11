@@ -1,0 +1,2519 @@
+/*
+
+
+ *= require_self 
+ *= require trix 
+ *= require_tree .
+ *= stub active_admin
+ */
+/* line 15, C:/Sites/experiments/app/assets/stylesheets/application.css */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* line 15, C:/Sites/experiments/app/assets/stylesheets/application.css */
+body {
+  line-height: 1;
+}
+
+/* line 15, C:/Sites/experiments/app/assets/stylesheets/application.css */
+ol, ul {
+  list-style: none;
+}
+
+/* line 15, C:/Sites/experiments/app/assets/stylesheets/application.css */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 15, C:/Sites/experiments/app/assets/stylesheets/application.css */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 15, C:/Sites/experiments/app/assets/stylesheets/application.css */
+:focus {
+  outline: 0;
+}
+
+/* line 15, C:/Sites/experiments/app/assets/stylesheets/application.css */
+ins {
+  text-decoration: none;
+}
+
+/* line 15, C:/Sites/experiments/app/assets/stylesheets/application.css */
+del {
+  text-decoration: line-through;
+}
+
+/* line 15, C:/Sites/experiments/app/assets/stylesheets/application.css */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 16, C:/Sites/experiments/app/assets/stylesheets/application.css */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* line 29, C:/Sites/experiments/app/assets/stylesheets/application.css */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/* line 34, C:/Sites/experiments/app/assets/stylesheets/application.css */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 38, C:/Sites/experiments/app/assets/stylesheets/application.css */
+[hidden], template {
+  display: none;
+}
+
+/* line 41, C:/Sites/experiments/app/assets/stylesheets/application.css */
+html {
+  background: #fff;
+  color: #000;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 47, C:/Sites/experiments/app/assets/stylesheets/application.css */
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+/* line 54, C:/Sites/experiments/app/assets/stylesheets/application.css */
+body {
+  margin: 0;
+}
+
+/* line 57, C:/Sites/experiments/app/assets/stylesheets/application.css */
+a {
+  background: transparent;
+}
+
+/* line 59, C:/Sites/experiments/app/assets/stylesheets/application.css */
+a:focus {
+  outline: thin dotted;
+}
+
+/* line 61, C:/Sites/experiments/app/assets/stylesheets/application.css */
+a:hover, a:active {
+  outline: 0;
+}
+
+/* line 64, C:/Sites/experiments/app/assets/stylesheets/application.css */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 68, C:/Sites/experiments/app/assets/stylesheets/application.css */
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+
+/* line 72, C:/Sites/experiments/app/assets/stylesheets/application.css */
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+
+/* line 76, C:/Sites/experiments/app/assets/stylesheets/application.css */
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+
+/* line 80, C:/Sites/experiments/app/assets/stylesheets/application.css */
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+
+/* line 84, C:/Sites/experiments/app/assets/stylesheets/application.css */
+h6 {
+  font-size: 0.75em;
+  margin: 2.33em 0;
+}
+
+/* line 88, C:/Sites/experiments/app/assets/stylesheets/application.css */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 91, C:/Sites/experiments/app/assets/stylesheets/application.css */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 95, C:/Sites/experiments/app/assets/stylesheets/application.css */
+dfn {
+  font-style: italic;
+}
+
+/* line 98, C:/Sites/experiments/app/assets/stylesheets/application.css */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 102, C:/Sites/experiments/app/assets/stylesheets/application.css */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/* line 109, C:/Sites/experiments/app/assets/stylesheets/application.css */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* line 114, C:/Sites/experiments/app/assets/stylesheets/application.css */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/* line 117, C:/Sites/experiments/app/assets/stylesheets/application.css */
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/* line 122, C:/Sites/experiments/app/assets/stylesheets/application.css */
+small {
+  font-size: 80%;
+}
+
+/* line 125, C:/Sites/experiments/app/assets/stylesheets/application.css */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 132, C:/Sites/experiments/app/assets/stylesheets/application.css */
+sup {
+  top: -0.5em;
+}
+
+/* line 135, C:/Sites/experiments/app/assets/stylesheets/application.css */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 138, C:/Sites/experiments/app/assets/stylesheets/application.css */
+img {
+  border: 0;
+}
+
+/* line 141, C:/Sites/experiments/app/assets/stylesheets/application.css */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 144, C:/Sites/experiments/app/assets/stylesheets/application.css */
+figure {
+  margin: 0;
+}
+
+/* line 147, C:/Sites/experiments/app/assets/stylesheets/application.css */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* line 152, C:/Sites/experiments/app/assets/stylesheets/application.css */
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+}
+
+/* line 157, C:/Sites/experiments/app/assets/stylesheets/application.css */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+}
+
+/* line 166, C:/Sites/experiments/app/assets/stylesheets/application.css */
+button,
+input {
+  line-height: normal;
+}
+
+/* line 170, C:/Sites/experiments/app/assets/stylesheets/application.css */
+button,
+select {
+  text-transform: none;
+}
+
+/* line 174, C:/Sites/experiments/app/assets/stylesheets/application.css */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 181, C:/Sites/experiments/app/assets/stylesheets/application.css */
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+/* line 185, C:/Sites/experiments/app/assets/stylesheets/application.css */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 190, C:/Sites/experiments/app/assets/stylesheets/application.css */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+
+/* line 194, C:/Sites/experiments/app/assets/stylesheets/application.css */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 198, C:/Sites/experiments/app/assets/stylesheets/application.css */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 202, C:/Sites/experiments/app/assets/stylesheets/application.css */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+/* line 206, C:/Sites/experiments/app/assets/stylesheets/application.css */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 210, C:/Sites/experiments/app/assets/stylesheets/application.css */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/*
+ * Global Styles
+ */
+/* line 216, C:/Sites/experiments/app/assets/stylesheets/application.css */
+body {
+  color: #927e7e;
+  font-family: "Montserrat", "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* line 223, C:/Sites/experiments/app/assets/stylesheets/application.css */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  margin: 0 0 20px;
+}
+
+/* line 227, C:/Sites/experiments/app/assets/stylesheets/application.css */
+hr {
+  border: none;
+  border-bottom: 1px solid #777;
+}
+
+/* line 231, C:/Sites/experiments/app/assets/stylesheets/application.css */
+ul, ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+/* line 235, C:/Sites/experiments/app/assets/stylesheets/application.css */
+a {
+  text-decoration: none;
+  color: #ed5151;
+}
+
+/* line 239, C:/Sites/experiments/app/assets/stylesheets/application.css */
+address {
+  font-style: normal;
+}
+
+/* line 242, C:/Sites/experiments/app/assets/stylesheets/application.css */
+p {
+  margin-top: 0;
+}
+
+/* line 245, C:/Sites/experiments/app/assets/stylesheets/application.css */
+form input, form textarea, form select {
+  outline: none;
+}
+
+/* line 247, C:/Sites/experiments/app/assets/stylesheets/application.css */
+form select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* line 251, C:/Sites/experiments/app/assets/stylesheets/application.css */
+form textarea {
+  resize: vertical;
+}
+
+@media screen and (max-width: 320px) {
+  /* line 255, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  [class*="col-xs"] {
+    width: 100%;
+  }
+}
+/*
+ * Reusable Components Style
+ */
+/* line 261, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.button, form input[type="submit"], form button, form input[type="reset"] {
+  background: #ed5151;
+  color: white;
+  padding: 10px;
+  display: inline-block;
+}
+
+/* line 267, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.feature {
+  padding-left: 90px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+/* line 271, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.feature p {
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* line 275, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.feature-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: inline-block;
+  background: #ed5151;
+  text-align: center;
+  padding-top: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* line 287, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.feature-title {
+  font-size: 24px;
+  font-size: 1.5em;
+  color: #6a5b5b;
+  font-weight: 400;
+  margin: 0 0 10px;
+}
+
+/* line 294, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.team {
+  margin-bottom: 30px;
+  margin: 0 auto 30px;
+  width: 100%;
+}
+
+/* line 298, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.team img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  width: 100%;
+}
+
+/* line 303, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.team figcaption {
+  background: #ed5151;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+/* line 308, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.team h2 {
+  text-transform: uppercase;
+  margin: 0;
+  line-height: normal;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 18px;
+  font-size: 1.125em;
+}
+
+/* line 318, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.team small {
+  font-size: 14px;
+  font-size: 0.875em;
+  color: #303236;
+}
+
+/* line 323, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.testimonial-slider .slides {
+  list-style: none;
+  margin: 0;
+  *zoom: 1;
+}
+
+/* line 327, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.testimonial-slider .slides:after {
+  content: " ";
+  clear: both;
+  display: block;
+  overflow: hidden;
+  height: 0;
+}
+
+/* line 333, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.testimonial-slider .slides li {
+  padding-left: 140px;
+  position: relative;
+  min-height: 140px;
+}
+
+@media screen and (max-width: 480px) {
+  /* line 338, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .testimonial-slider .slides li {
+    padding-left: 0;
+  }
+}
+/* line 340, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.testimonial-slider .slides .cite-avatar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+}
+
+@media screen and (max-width: 480px) {
+  /* line 348, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .testimonial-slider .slides .cite-avatar {
+    display: block;
+    margin: 0 auto 20px;
+    position: relative;
+  }
+}
+/* line 352, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.testimonial-slider blockquote {
+  margin: 0;
+  color: #6a5b5b;
+  font-size: 18px;
+  font-size: 1.125em;
+}
+
+@media screen and (max-width: 480px) {
+  /* line 358, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .testimonial-slider blockquote {
+    text-align: center;
+  }
+}
+/* line 360, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.testimonial-slider cite {
+  color: #927e7e;
+  font-size: 16px;
+  font-size: 1rem;
+  font-style: normal;
+}
+
+/* line 365, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.testimonial-slider .flex-control-nav {
+  list-style: none;
+  margin-left: 140px;
+}
+
+/* line 368, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.testimonial-slider .flex-control-nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* line 371, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.testimonial-slider .flex-control-nav li a {
+  background: #ede6e6;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #ede6e6;
+  box-shadow: 0 0 0 2px #ed5151;
+  border-radius: 50%;
+  display: block;
+  overflow: hidden;
+  text-indent: -9999px;
+}
+
+/* line 381, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.testimonial-slider .flex-control-nav li a.flex-active {
+  background-color: #ed5151;
+}
+
+/* line 384, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.client-grid {
+  *zoom: 1;
+}
+
+/* line 386, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.client-grid:after {
+  content: " ";
+  clear: both;
+  display: block;
+  overflow: hidden;
+  height: 0;
+}
+
+/* line 392, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.client-grid .client {
+  width: 25%;
+  float: left;
+  height: 230px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-left: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+/* line 402, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.client-grid .client:first-child, .client-grid .client:nth-child(5n) {
+  border-left: none;
+}
+
+/* line 404, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.client-grid .client:nth-child(5), .client-grid .client:nth-child(6), .client-grid .client:nth-child(7), .client-grid .client:nth-child(8) {
+  border-bottom: none;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 407, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .client-grid .client {
+    width: 50%;
+    border-left: 1px solid #e8e8e8;
+  }
+
+  /* line 410, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .client-grid .client:nth-child(5n) {
+    border-right: 1px solid #e8e8e8;
+  }
+
+  /* line 412, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .client-grid .client:nth-child(3n) {
+    border-left: none;
+  }
+
+  /* line 414, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .client-grid .client:nth-child(7) {
+    border-left: none;
+  }
+
+  /* line 416, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .client-grid .client:nth-child(5), .client-grid .client:nth-child(6) {
+    border-bottom: 1px solid #e8e8e8;
+  }
+}
+/* line 418, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.client-grid .client img {
+  margin: auto;
+  max-width: 80%;
+}
+
+/* line 422, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.map {
+  min-height: 450px;
+}
+
+/* line 425, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.contact-form .row {
+  margin: 0 -5px;
+}
+
+/* line 427, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.contact-form [class*="col-"] {
+  padding: 0 5px;
+}
+
+/* line 429, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.contact-form .control {
+  position: relative;
+}
+
+/* line 431, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.contact-form .control .fa {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  color: #e5dcdc;
+}
+
+/* line 436, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.contact-form .control input, .contact-form .control textarea {
+  width: 100%;
+  padding: 10px 10px 10px 30px;
+  margin-bottom: 10px;
+  outline: none;
+  border: none;
+}
+
+/* line 442, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.contact-form .control textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* line 445, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.contact-form .right-aligned {
+  text-align: right;
+}
+
+/* line 447, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.contact-form input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #303236;
+  color: white;
+  border: none;
+  font-size: 20px;
+  font-size: 1.25em;
+}
+
+/* line 455, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  *zoom: 1;
+}
+
+/* line 461, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.container:after {
+  content: " ";
+  clear: both;
+  display: block;
+  overflow: hidden;
+  height: 0;
+}
+
+@media (min-width: 768px) {
+  /* line 468, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 471, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 474, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .container {
+    width: 1170px;
+  }
+}
+/* line 477, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  *zoom: 1;
+}
+
+/* line 483, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.container-fluid:after {
+  content: " ";
+  clear: both;
+  display: block;
+  overflow: hidden;
+  height: 0;
+}
+
+/* line 490, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+  *zoom: 1;
+}
+
+/* line 494, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.row:after {
+  content: " ";
+  clear: both;
+  display: block;
+  overflow: hidden;
+  height: 0;
+}
+
+/* line 501, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* line 507, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+  float: left;
+}
+
+/* line 510, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.col-xs-1 {
+  width: 8.3333333333%;
+}
+
+/* line 513, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.col-xs-2 {
+  width: 16.6666666667%;
+}
+
+/* line 516, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.col-xs-3 {
+  width: 25%;
+}
+
+/* line 519, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.col-xs-4 {
+  width: 33.3333333333%;
+}
+
+/* line 522, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.col-xs-5 {
+  width: 41.6666666667%;
+}
+
+/* line 525, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.col-xs-6 {
+  width: 50%;
+}
+
+/* line 528, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.col-xs-7 {
+  width: 58.3333333333%;
+}
+
+/* line 531, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.col-xs-8 {
+  width: 66.6666666667%;
+}
+
+/* line 534, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.col-xs-9 {
+  width: 75%;
+}
+
+/* line 537, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.col-xs-10 {
+  width: 83.3333333333%;
+}
+
+/* line 540, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.col-xs-11 {
+  width: 91.6666666667%;
+}
+
+/* line 543, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.col-xs-12 {
+  width: 100%;
+}
+
+/* line 546, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.col-xs-pull-0 {
+  right: auto;
+}
+
+/* line 549, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.col-xs-pull-1 {
+  right: 8.3333333333%;
+}
+
+/* line 552, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.col-xs-pull-2 {
+  right: 16.6666666667%;
+}
+
+/* line 555, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.col-xs-pull-3 {
+  right: 25%;
+}
+
+/* line 558, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.col-xs-pull-4 {
+  right: 33.3333333333%;
+}
+
+/* line 561, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.col-xs-pull-5 {
+  right: 41.6666666667%;
+}
+
+/* line 564, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.col-xs-pull-6 {
+  right: 50%;
+}
+
+/* line 567, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.col-xs-pull-7 {
+  right: 58.3333333333%;
+}
+
+/* line 570, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.col-xs-pull-8 {
+  right: 66.6666666667%;
+}
+
+/* line 573, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.col-xs-pull-9 {
+  right: 75%;
+}
+
+/* line 576, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.col-xs-pull-10 {
+  right: 83.3333333333%;
+}
+
+/* line 579, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.col-xs-pull-11 {
+  right: 91.6666666667%;
+}
+
+/* line 582, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.col-xs-pull-12 {
+  right: 100%;
+}
+
+/* line 585, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.col-xs-push-0 {
+  left: auto;
+}
+
+/* line 588, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.col-xs-push-1 {
+  left: 8.3333333333%;
+}
+
+/* line 591, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.col-xs-push-2 {
+  left: 16.6666666667%;
+}
+
+/* line 594, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.col-xs-push-3 {
+  left: 25%;
+}
+
+/* line 597, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.col-xs-push-4 {
+  left: 33.3333333333%;
+}
+
+/* line 600, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.col-xs-push-5 {
+  left: 41.6666666667%;
+}
+
+/* line 603, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.col-xs-push-6 {
+  left: 50%;
+}
+
+/* line 606, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.col-xs-push-7 {
+  left: 58.3333333333%;
+}
+
+/* line 609, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.col-xs-push-8 {
+  left: 66.6666666667%;
+}
+
+/* line 612, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.col-xs-push-9 {
+  left: 75%;
+}
+
+/* line 615, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.col-xs-push-10 {
+  left: 83.3333333333%;
+}
+
+/* line 618, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.col-xs-push-11 {
+  left: 91.6666666667%;
+}
+
+/* line 621, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.col-xs-push-12 {
+  left: 100%;
+}
+
+/* line 624, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.col-xs-offset-0 {
+  margin-left: 0%;
+}
+
+/* line 627, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.col-xs-offset-1 {
+  margin-left: 8.3333333333%;
+}
+
+/* line 630, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.col-xs-offset-2 {
+  margin-left: 16.6666666667%;
+}
+
+/* line 633, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.col-xs-offset-3 {
+  margin-left: 25%;
+}
+
+/* line 636, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.col-xs-offset-4 {
+  margin-left: 33.3333333333%;
+}
+
+/* line 639, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.col-xs-offset-5 {
+  margin-left: 41.6666666667%;
+}
+
+/* line 642, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.col-xs-offset-6 {
+  margin-left: 50%;
+}
+
+/* line 645, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.col-xs-offset-7 {
+  margin-left: 58.3333333333%;
+}
+
+/* line 648, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.col-xs-offset-8 {
+  margin-left: 66.6666666667%;
+}
+
+/* line 651, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.col-xs-offset-9 {
+  margin-left: 75%;
+}
+
+/* line 654, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.col-xs-offset-10 {
+  margin-left: 83.3333333333%;
+}
+
+/* line 657, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.col-xs-offset-11 {
+  margin-left: 91.6666666667%;
+}
+
+/* line 660, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.col-xs-offset-12 {
+  margin-left: 100%;
+}
+
+@media (min-width: 768px) {
+  /* line 664, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: left;
+  }
+
+  /* line 667, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-sm-1 {
+    width: 8.3333333333%;
+  }
+
+  /* line 670, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-sm-2 {
+    width: 16.6666666667%;
+  }
+
+  /* line 673, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-sm-3 {
+    width: 25%;
+  }
+
+  /* line 676, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-sm-4 {
+    width: 33.3333333333%;
+  }
+
+  /* line 679, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-sm-5 {
+    width: 41.6666666667%;
+  }
+
+  /* line 682, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-sm-6 {
+    width: 50%;
+  }
+
+  /* line 685, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-sm-7 {
+    width: 58.3333333333%;
+  }
+
+  /* line 688, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-sm-8 {
+    width: 66.6666666667%;
+  }
+
+  /* line 691, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-sm-9 {
+    width: 75%;
+  }
+
+  /* line 694, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-sm-10 {
+    width: 83.3333333333%;
+  }
+
+  /* line 697, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-sm-11 {
+    width: 91.6666666667%;
+  }
+
+  /* line 700, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-sm-12 {
+    width: 100%;
+  }
+
+  /* line 703, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-sm-pull-0 {
+    right: auto;
+  }
+
+  /* line 706, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-sm-pull-1 {
+    right: 8.3333333333%;
+  }
+
+  /* line 709, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-sm-pull-2 {
+    right: 16.6666666667%;
+  }
+
+  /* line 712, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-sm-pull-3 {
+    right: 25%;
+  }
+
+  /* line 715, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-sm-pull-4 {
+    right: 33.3333333333%;
+  }
+
+  /* line 718, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-sm-pull-5 {
+    right: 41.6666666667%;
+  }
+
+  /* line 721, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-sm-pull-6 {
+    right: 50%;
+  }
+
+  /* line 724, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-sm-pull-7 {
+    right: 58.3333333333%;
+  }
+
+  /* line 727, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-sm-pull-8 {
+    right: 66.6666666667%;
+  }
+
+  /* line 730, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-sm-pull-9 {
+    right: 75%;
+  }
+
+  /* line 733, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-sm-pull-10 {
+    right: 83.3333333333%;
+  }
+
+  /* line 736, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-sm-pull-11 {
+    right: 91.6666666667%;
+  }
+
+  /* line 739, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-sm-pull-12 {
+    right: 100%;
+  }
+
+  /* line 742, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-sm-push-0 {
+    left: auto;
+  }
+
+  /* line 745, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-sm-push-1 {
+    left: 8.3333333333%;
+  }
+
+  /* line 748, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-sm-push-2 {
+    left: 16.6666666667%;
+  }
+
+  /* line 751, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-sm-push-3 {
+    left: 25%;
+  }
+
+  /* line 754, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-sm-push-4 {
+    left: 33.3333333333%;
+  }
+
+  /* line 757, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-sm-push-5 {
+    left: 41.6666666667%;
+  }
+
+  /* line 760, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-sm-push-6 {
+    left: 50%;
+  }
+
+  /* line 763, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-sm-push-7 {
+    left: 58.3333333333%;
+  }
+
+  /* line 766, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-sm-push-8 {
+    left: 66.6666666667%;
+  }
+
+  /* line 769, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-sm-push-9 {
+    left: 75%;
+  }
+
+  /* line 772, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-sm-push-10 {
+    left: 83.3333333333%;
+  }
+
+  /* line 775, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-sm-push-11 {
+    left: 91.6666666667%;
+  }
+
+  /* line 778, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-sm-push-12 {
+    left: 100%;
+  }
+
+  /* line 781, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-sm-offset-0 {
+    margin-left: 0%;
+  }
+
+  /* line 784, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-sm-offset-1 {
+    margin-left: 8.3333333333%;
+  }
+
+  /* line 787, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-sm-offset-2 {
+    margin-left: 16.6666666667%;
+  }
+
+  /* line 790, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-sm-offset-3 {
+    margin-left: 25%;
+  }
+
+  /* line 793, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-sm-offset-4 {
+    margin-left: 33.3333333333%;
+  }
+
+  /* line 796, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-sm-offset-5 {
+    margin-left: 41.6666666667%;
+  }
+
+  /* line 799, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-sm-offset-6 {
+    margin-left: 50%;
+  }
+
+  /* line 802, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-sm-offset-7 {
+    margin-left: 58.3333333333%;
+  }
+
+  /* line 805, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-sm-offset-8 {
+    margin-left: 66.6666666667%;
+  }
+
+  /* line 808, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-sm-offset-9 {
+    margin-left: 75%;
+  }
+
+  /* line 811, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-sm-offset-10 {
+    margin-left: 83.3333333333%;
+  }
+
+  /* line 814, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-sm-offset-11 {
+    margin-left: 91.6666666667%;
+  }
+
+  /* line 817, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-sm-offset-12 {
+    margin-left: 100%;
+  }
+}
+@media (min-width: 992px) {
+  /* line 820, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+  }
+
+  /* line 823, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-md-1 {
+    width: 8.3333333333%;
+  }
+
+  /* line 826, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-md-2 {
+    width: 16.6666666667%;
+  }
+
+  /* line 829, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-md-3 {
+    width: 25%;
+  }
+
+  /* line 832, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-md-4 {
+    width: 33.3333333333%;
+  }
+
+  /* line 835, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-md-5 {
+    width: 41.6666666667%;
+  }
+
+  /* line 838, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-md-6 {
+    width: 50%;
+  }
+
+  /* line 841, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-md-7 {
+    width: 58.3333333333%;
+  }
+
+  /* line 844, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-md-8 {
+    width: 66.6666666667%;
+  }
+
+  /* line 847, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-md-9 {
+    width: 75%;
+  }
+
+  /* line 850, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-md-10 {
+    width: 83.3333333333%;
+  }
+
+  /* line 853, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-md-11 {
+    width: 91.6666666667%;
+  }
+
+  /* line 856, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-md-12 {
+    width: 100%;
+  }
+
+  /* line 859, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-md-pull-0 {
+    right: auto;
+  }
+
+  /* line 862, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-md-pull-1 {
+    right: 8.3333333333%;
+  }
+
+  /* line 865, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-md-pull-2 {
+    right: 16.6666666667%;
+  }
+
+  /* line 868, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-md-pull-3 {
+    right: 25%;
+  }
+
+  /* line 871, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-md-pull-4 {
+    right: 33.3333333333%;
+  }
+
+  /* line 874, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-md-pull-5 {
+    right: 41.6666666667%;
+  }
+
+  /* line 877, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-md-pull-6 {
+    right: 50%;
+  }
+
+  /* line 880, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-md-pull-7 {
+    right: 58.3333333333%;
+  }
+
+  /* line 883, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-md-pull-8 {
+    right: 66.6666666667%;
+  }
+
+  /* line 886, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-md-pull-9 {
+    right: 75%;
+  }
+
+  /* line 889, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-md-pull-10 {
+    right: 83.3333333333%;
+  }
+
+  /* line 892, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-md-pull-11 {
+    right: 91.6666666667%;
+  }
+
+  /* line 895, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-md-pull-12 {
+    right: 100%;
+  }
+
+  /* line 898, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-md-push-0 {
+    left: auto;
+  }
+
+  /* line 901, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-md-push-1 {
+    left: 8.3333333333%;
+  }
+
+  /* line 904, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-md-push-2 {
+    left: 16.6666666667%;
+  }
+
+  /* line 907, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-md-push-3 {
+    left: 25%;
+  }
+
+  /* line 910, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-md-push-4 {
+    left: 33.3333333333%;
+  }
+
+  /* line 913, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-md-push-5 {
+    left: 41.6666666667%;
+  }
+
+  /* line 916, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-md-push-6 {
+    left: 50%;
+  }
+
+  /* line 919, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-md-push-7 {
+    left: 58.3333333333%;
+  }
+
+  /* line 922, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-md-push-8 {
+    left: 66.6666666667%;
+  }
+
+  /* line 925, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-md-push-9 {
+    left: 75%;
+  }
+
+  /* line 928, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-md-push-10 {
+    left: 83.3333333333%;
+  }
+
+  /* line 931, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-md-push-11 {
+    left: 91.6666666667%;
+  }
+
+  /* line 934, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-md-push-12 {
+    left: 100%;
+  }
+
+  /* line 937, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-md-offset-0 {
+    margin-left: 0%;
+  }
+
+  /* line 940, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-md-offset-1 {
+    margin-left: 8.3333333333%;
+  }
+
+  /* line 943, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-md-offset-2 {
+    margin-left: 16.6666666667%;
+  }
+
+  /* line 946, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-md-offset-3 {
+    margin-left: 25%;
+  }
+
+  /* line 949, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-md-offset-4 {
+    margin-left: 33.3333333333%;
+  }
+
+  /* line 952, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-md-offset-5 {
+    margin-left: 41.6666666667%;
+  }
+
+  /* line 955, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-md-offset-6 {
+    margin-left: 50%;
+  }
+
+  /* line 958, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-md-offset-7 {
+    margin-left: 58.3333333333%;
+  }
+
+  /* line 961, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-md-offset-8 {
+    margin-left: 66.6666666667%;
+  }
+
+  /* line 964, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-md-offset-9 {
+    margin-left: 75%;
+  }
+
+  /* line 967, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-md-offset-10 {
+    margin-left: 83.3333333333%;
+  }
+
+  /* line 970, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-md-offset-11 {
+    margin-left: 91.6666666667%;
+  }
+
+  /* line 973, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-md-offset-12 {
+    margin-left: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 976, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+  }
+
+  /* line 979, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-lg-1 {
+    width: 8.3333333333%;
+  }
+
+  /* line 982, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-lg-2 {
+    width: 16.6666666667%;
+  }
+
+  /* line 985, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-lg-3 {
+    width: 25%;
+  }
+
+  /* line 988, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-lg-4 {
+    width: 33.3333333333%;
+  }
+
+  /* line 991, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-lg-5 {
+    width: 41.6666666667%;
+  }
+
+  /* line 994, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-lg-6 {
+    width: 50%;
+  }
+
+  /* line 997, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-lg-7 {
+    width: 58.3333333333%;
+  }
+
+  /* line 1000, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-lg-8 {
+    width: 66.6666666667%;
+  }
+
+  /* line 1003, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-lg-9 {
+    width: 75%;
+  }
+
+  /* line 1006, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-lg-10 {
+    width: 83.3333333333%;
+  }
+
+  /* line 1009, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-lg-11 {
+    width: 91.6666666667%;
+  }
+
+  /* line 1012, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-lg-12 {
+    width: 100%;
+  }
+
+  /* line 1015, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-lg-pull-0 {
+    right: auto;
+  }
+
+  /* line 1018, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-lg-pull-1 {
+    right: 8.3333333333%;
+  }
+
+  /* line 1021, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-lg-pull-2 {
+    right: 16.6666666667%;
+  }
+
+  /* line 1024, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-lg-pull-3 {
+    right: 25%;
+  }
+
+  /* line 1027, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-lg-pull-4 {
+    right: 33.3333333333%;
+  }
+
+  /* line 1030, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-lg-pull-5 {
+    right: 41.6666666667%;
+  }
+
+  /* line 1033, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-lg-pull-6 {
+    right: 50%;
+  }
+
+  /* line 1036, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-lg-pull-7 {
+    right: 58.3333333333%;
+  }
+
+  /* line 1039, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-lg-pull-8 {
+    right: 66.6666666667%;
+  }
+
+  /* line 1042, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-lg-pull-9 {
+    right: 75%;
+  }
+
+  /* line 1045, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-lg-pull-10 {
+    right: 83.3333333333%;
+  }
+
+  /* line 1048, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-lg-pull-11 {
+    right: 91.6666666667%;
+  }
+
+  /* line 1051, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-lg-pull-12 {
+    right: 100%;
+  }
+
+  /* line 1054, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-lg-push-0 {
+    left: auto;
+  }
+
+  /* line 1057, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-lg-push-1 {
+    left: 8.3333333333%;
+  }
+
+  /* line 1060, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-lg-push-2 {
+    left: 16.6666666667%;
+  }
+
+  /* line 1063, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-lg-push-3 {
+    left: 25%;
+  }
+
+  /* line 1066, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-lg-push-4 {
+    left: 33.3333333333%;
+  }
+
+  /* line 1069, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-lg-push-5 {
+    left: 41.6666666667%;
+  }
+
+  /* line 1072, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-lg-push-6 {
+    left: 50%;
+  }
+
+  /* line 1075, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-lg-push-7 {
+    left: 58.3333333333%;
+  }
+
+  /* line 1078, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-lg-push-8 {
+    left: 66.6666666667%;
+  }
+
+  /* line 1081, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-lg-push-9 {
+    left: 75%;
+  }
+
+  /* line 1084, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-lg-push-10 {
+    left: 83.3333333333%;
+  }
+
+  /* line 1087, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-lg-push-11 {
+    left: 91.6666666667%;
+  }
+
+  /* line 1090, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-lg-push-12 {
+    left: 100%;
+  }
+
+  /* line 1093, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-lg-offset-0 {
+    margin-left: 0%;
+  }
+
+  /* line 1096, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-lg-offset-1 {
+    margin-left: 8.3333333333%;
+  }
+
+  /* line 1099, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-lg-offset-2 {
+    margin-left: 16.6666666667%;
+  }
+
+  /* line 1102, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-lg-offset-3 {
+    margin-left: 25%;
+  }
+
+  /* line 1105, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-lg-offset-4 {
+    margin-left: 33.3333333333%;
+  }
+
+  /* line 1108, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-lg-offset-5 {
+    margin-left: 41.6666666667%;
+  }
+
+  /* line 1111, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-lg-offset-6 {
+    margin-left: 50%;
+  }
+
+  /* line 1114, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-lg-offset-7 {
+    margin-left: 58.3333333333%;
+  }
+
+  /* line 1117, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-lg-offset-8 {
+    margin-left: 66.6666666667%;
+  }
+
+  /* line 1120, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-lg-offset-9 {
+    margin-left: 75%;
+  }
+
+  /* line 1123, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-lg-offset-10 {
+    margin-left: 83.3333333333%;
+  }
+
+  /* line 1126, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-lg-offset-11 {
+    margin-left: 91.6666666667%;
+  }
+
+  /* line 1129, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .col-lg-offset-12 {
+    margin-left: 100%;
+  }
+}
+@-ms-viewport {
+  width: device-width;
+}
+/* line 1133, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.visible-xs, .visible-sm, .visible-md, .visible-lg {
+  display: none !important;
+}
+
+/* line 1136, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.visible-xs-block,
+.visible-xs-inline,
+.visible-xs-inline-block,
+.visible-sm-block,
+.visible-sm-inline,
+.visible-sm-inline-block,
+.visible-md-block,
+.visible-md-inline,
+.visible-md-inline-block,
+.visible-lg-block,
+.visible-lg-inline,
+.visible-lg-inline-block {
+  display: none !important;
+}
+
+@media (max-width: 767px) {
+  /* line 1151, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .visible-xs {
+    display: block !important;
+  }
+
+  /* line 1154, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  table.visible-xs {
+    display: table;
+  }
+
+  /* line 1157, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  tr.visible-xs {
+    display: table-row !important;
+  }
+
+  /* line 1160, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  th.visible-xs,
+  td.visible-xs {
+    display: table-cell !important;
+  }
+}
+@media (max-width: 767px) {
+  /* line 1164, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .visible-xs-block {
+    display: block !important;
+  }
+}
+@media (max-width: 767px) {
+  /* line 1168, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .visible-xs-inline {
+    display: inline !important;
+  }
+}
+@media (max-width: 767px) {
+  /* line 1172, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .visible-xs-inline-block {
+    display: inline-block !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 1176, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .visible-sm {
+    display: block !important;
+  }
+
+  /* line 1179, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  table.visible-sm {
+    display: table;
+  }
+
+  /* line 1182, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  tr.visible-sm {
+    display: table-row !important;
+  }
+
+  /* line 1185, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  th.visible-sm,
+  td.visible-sm {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 1189, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .visible-sm-block {
+    display: block !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 1193, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .visible-sm-inline {
+    display: inline !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 1197, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .visible-sm-inline-block {
+    display: inline-block !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 1201, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .visible-md {
+    display: block !important;
+  }
+
+  /* line 1204, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  table.visible-md {
+    display: table;
+  }
+
+  /* line 1207, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  tr.visible-md {
+    display: table-row !important;
+  }
+
+  /* line 1210, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  th.visible-md,
+  td.visible-md {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 1214, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .visible-md-block {
+    display: block !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 1218, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .visible-md-inline {
+    display: inline !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 1222, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .visible-md-inline-block {
+    display: inline-block !important;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 1226, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .visible-lg {
+    display: block !important;
+  }
+
+  /* line 1229, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  table.visible-lg {
+    display: table;
+  }
+
+  /* line 1232, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  tr.visible-lg {
+    display: table-row !important;
+  }
+
+  /* line 1235, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  th.visible-lg,
+  td.visible-lg {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 1239, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .visible-lg-block {
+    display: block !important;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 1243, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .visible-lg-inline {
+    display: inline !important;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 1247, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .visible-lg-inline-block {
+    display: inline-block !important;
+  }
+}
+@media (max-width: 767px) {
+  /* line 1251, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .hidden-xs {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 1254, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .hidden-sm {
+    display: none !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 1257, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .hidden-md {
+    display: none !important;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 1260, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .hidden-lg {
+    display: none !important;
+  }
+}
+/* line 1262, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.visible-print {
+  display: none !important;
+}
+
+@media print {
+  /* line 1266, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .visible-print {
+    display: block !important;
+  }
+
+  /* line 1269, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  table.visible-print {
+    display: table;
+  }
+
+  /* line 1272, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  tr.visible-print {
+    display: table-row !important;
+  }
+
+  /* line 1275, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  th.visible-print,
+  td.visible-print {
+    display: table-cell !important;
+  }
+}
+/* line 1278, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.visible-print-block {
+  display: none !important;
+}
+
+@media print {
+  /* line 1281, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .visible-print-block {
+    display: block !important;
+  }
+}
+/* line 1284, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.visible-print-inline {
+  display: none !important;
+}
+
+@media print {
+  /* line 1287, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .visible-print-inline {
+    display: inline !important;
+  }
+}
+/* line 1290, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.visible-print-inline-block {
+  display: none !important;
+}
+
+@media print {
+  /* line 1293, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .visible-print-inline-block {
+    display: inline-block !important;
+  }
+}
+@media print {
+  /* line 1297, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .hidden-print {
+    display: none !important;
+  }
+}
+/*
+ * Header Styles
+ */
+/* line 1302, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.site-header {
+  *zoom: 1;
+  padding: 20px 0 0;
+  line-height: normal;
+}
+
+/* line 1306, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.site-header:after {
+  content: " ";
+  clear: both;
+  display: block;
+  overflow: hidden;
+  height: 0;
+}
+
+/* line 1312, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.site-header .container {
+  *zoom: 1;
+}
+
+/* line 1314, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.site-header .container:after {
+  content: " ";
+  clear: both;
+  display: block;
+  overflow: hidden;
+  height: 0;
+}
+
+/* line 1321, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.logo {
+  float: left;
+  margin-bottom: 20px;
+}
+
+/* line 1325, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.main-navigation {
+  float: right;
+}
+
+/* line 1327, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.main-navigation .menu-toggle {
+  background: none;
+  border: none;
+  color: #333;
+  padding: 10px;
+  font-size: 18px;
+  font-size: 1.125em;
+  display: inline-block;
+  vertical-align: top;
+  outline: none;
+  display: none;
+}
+
+@media screen and (max-width: 990px) {
+  /* line 1339, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .main-navigation .menu-toggle {
+    display: block;
+  }
+}
+/* line 1341, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.main-navigation .menu {
+  display: inline-block;
+  vertical-align: top;
+  list-style: none;
+  *zoom: 1;
+}
+
+/* line 1346, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.main-navigation .menu:after {
+  content: " ";
+  clear: both;
+  display: block;
+  overflow: hidden;
+  height: 0;
+}
+
+@media screen and (max-width: 990px) {
+  /* line 1353, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .main-navigation .menu {
+    display: none;
+  }
+}
+/* line 1355, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.main-navigation .menu li {
+  float: left;
+  position: relative;
+}
+
+/* line 1358, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.main-navigation .menu li a {
+  padding: 10px 20px;
+  display: block;
+  color: #927e7e;
+  font-size: 14px;
+  font-size: 0.875em;
+}
+
+/* line 1364, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.main-navigation .menu li:hover:before, .main-navigation .menu li:hover:after, .main-navigation .menu li:focus:before, .main-navigation .menu li:focus:after, .main-navigation .menu li.current-menu-item:before, .main-navigation .menu li.current-menu-item:after {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* line 1369, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.main-navigation .menu li:before, .main-navigation .menu li:after {
+  content: " ";
+  width: 100%;
+  left: 0;
+  height: 2px;
+  background: #ed5151;
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+/* line 1379, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.main-navigation .menu li:before {
+  top: 0;
+  -webkit-transform: translateY(20px);
+  -ms-transform: translateY(20px);
+  transform: translateY(20px);
+}
+
+/* line 1384, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.main-navigation .menu li:after {
+  botom: 0;
+  -webkit-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  transform: translateY(-20px);
+}
+
+/* line 1390, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.mobile-navigation {
+  clear: both;
+  background: #ed5151;
+  display: none;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 991px) {
+  /* line 1396, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .mobile-navigation {
+    display: none !important;
+  }
+}
+/* line 1398, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.mobile-navigation .menu {
+  list-style: none;
+}
+
+/* line 1400, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.mobile-navigation .menu li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+/* line 1403, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.mobile-navigation .menu li:last-child {
+  border-bottom: none;
+}
+
+/* line 1405, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.mobile-navigation a {
+  color: white;
+  padding: 10px;
+  display: block;
+}
+
+/* line 1410, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.page-head {
+  background: #ed5151;
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+}
+
+/* line 1415, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.page-head h1 {
+  font-size: 40px;
+  font-size: 2.5em;
+  margin: 0;
+}
+
+/* line 1420, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.hero {
+  background: #ed5151;
+  text-align: center;
+  padding: 50px 0;
+}
+
+/* line 1424, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.hero img {
+  margin-bottom: 20px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 1428, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.hero .hero-content {
+  color: white;
+}
+
+/* line 1430, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.hero .hero-content span {
+  padding: 10px;
+  background-color: #b23d3d;
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-size: 1.25em;
+}
+
+/* line 1437, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.hero .button, .hero form input[type="submit"], form .hero input[type="submit"], .hero form button, form .hero button, .hero form input[type="reset"], form .hero input[type="reset"] {
+  background: #303236;
+  font-size: 20px;
+  font-size: 1.25em;
+  padding: 10px 30px;
+}
+
+/* line 1443, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.fullwidth-block {
+  padding: 70px 0;
+}
+
+/* line 1445, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.fullwidth-block img {
+  max-width: 100%;
+}
+
+/* line 1448, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.cta {
+  background-color: #ede6e6;
+  padding: 50px 0;
+  color: #6a5b5b;
+}
+
+@media screen and (max-width: 990px) {
+  /* line 1453, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .cta {
+    text-align: center;
+  }
+}
+/* line 1455, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.cta span {
+  color: #ed5151;
+  font-weight: 700;
+}
+
+/* line 1458, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.cta h2 {
+  margin: 0;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 990px) {
+  /* line 1462, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .cta h2 {
+    margin-bottom: 30px;
+  }
+}
+/* line 1464, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.cta a.button {
+  padding: 10px 30px;
+  font-size: 20px;
+  font-size: 1.25em;
+}
+
+/* line 1469, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.testimonial-section {
+  background-color: #ede6e6;
+  padding: 40px 0;
+}
+
+@media screen and (max-width: 990px) {
+  /* line 1474, C:/Sites/experiments/app/assets/stylesheets/application.css */
+  .macbook {
+    margin-top: 30px;
+  }
+}
+/* line 1477, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.contact-area {
+  background-color: #ed5151;
+  color: white;
+}
+
+/* line 1480, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.contact-area address {
+  font-size: 30px;
+  font-size: 1.875em;
+  margin-bottom: 30px;
+}
+
+/* line 1484, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.contact-area address a {
+  color: white;
+}
+
+/* line 1486, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.contact-area address a:hover {
+  text-decoration: underline;
+}
+
+/*
+ * Footer Styles
+ */
+/* line 1495, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.site-footer {
+  background-color: #303236;
+  color: #9a9ca1;
+  padding: 50px 0;
+  font-size: 14px;
+  font-size: 0.875em;
+}
+
+/* line 1501, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.site-footer .widget {
+  margin-bottom: 30px;
+}
+
+/* line 1503, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.site-footer .widget-title {
+  color: #caccd3;
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: normal;
+}
+
+/* line 1508, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.site-footer a {
+  color: #9a9ca1;
+}
+
+/* line 1510, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.site-footer a:hover {
+  color: #ed5151;
+}
+
+/* line 1512, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.site-footer .dash-list {
+  list-style: none;
+}
+
+/* line 1514, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.site-footer .dash-list li {
+  position: relative;
+  padding: 5px 0 5px 20px;
+}
+
+/* line 1517, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.site-footer .dash-list li:before {
+  content: "-";
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+
+/* line 1523, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.social-links a {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #45474c;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  font-size: 1.25em;
+  line-height: 2.6;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+/* line 1536, C:/Sites/experiments/app/assets/stylesheets/application.css */
+.social-links a:hover {
+  background-color: #ed5151;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
